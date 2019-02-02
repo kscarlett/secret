@@ -12,10 +12,12 @@ This project implements cryptography and **has not been audited**. I also do not
 
 Secret can be used as a library in Go, or it can be used as a CLI application, using the wrapper.
 
-Adding and retrieving a secret from Go is as simple as the following:
+Adding and retrieving a secret from Go is as simple as the following (error handling omitted for simplicity):
 
 ```go
-//TODO
+s := secret.NewInMemory("demo-password")
+err := s.Set("example-key", "23819d20-9b07-4b20-8a6e-a3c533fa4994")
+exampleKey, err := s.Get("example-key")
 ```
 
 The same can be done on the command line like this:
@@ -32,3 +34,4 @@ TODO
 ## Changes from Gophercises
 
 - Use SHA256 instead of MD5 to turn the passphrase into the AES key in order to use AES-256 instead of AES-128.
+- Add tests
