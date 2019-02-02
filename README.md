@@ -1,5 +1,7 @@
 # :closed_lock_with_key: Secret
 
+[![Build Status](https://travis-ci.org/kscarlett/secret.svg?branch=master)](https://travis-ci.org/kscarlett/secret) [![Coverage Status](https://coveralls.io/repos/github/kscarlett/secret/badge.svg?branch=master)](https://coveralls.io/github/kscarlett/secret?branch=master)
+
 This project is based on [the Gophercises lesson](https://gophercises.com/exercises/secret). I have made my own [changes](#changes-from-gophercises) though.
 
 ## DANGER
